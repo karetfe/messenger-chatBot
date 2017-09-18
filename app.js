@@ -25,6 +25,13 @@ app.get('/webhook', function(req, res) {
   }
 });
 
+app.post('/webhook', function(req, res) {
+  console.log(req.body);
+  var data = req.body.entry[0];
+  console.log(data);
+  res.status(200);
+});
+
 var server = app.listen(process.env.OPENSHIFT_NODEJS_PORT || 3000, process.env.OPENSHIFT_NODEJS_IP || 'localhost',function () {
   console.log("Listening on port %s", server.address().port);
 });
