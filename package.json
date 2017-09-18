@@ -1,0 +1,21 @@
+{
+  "name": "dosomething",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://59bf91bf2d5271f55d00002e@dosomething-bashz.rhcloud.com/~/git/dosomething.git/"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "request": "^2.81.0"
+  }
+}
