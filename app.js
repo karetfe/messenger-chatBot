@@ -26,7 +26,7 @@ app.get('/webhook', function(req, res) {
 });
 
 app.post('/webhook', function(req, res) {
-  var data = req.body.entry[0].messaging[0];
+  var data = req.body.entry[0].messaging[0].sender;
   console.log(data);
   res.status(200);
 });
