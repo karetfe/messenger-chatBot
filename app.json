@@ -1,0 +1,8 @@
+{
+  "name": "messenger-chatBot",
+  "description": "A Demo of messenger chat bot",
+  "repository": "https://github.com/Think-iT-Labs/messenger-chatBot",
+  "logo": "",
+  "keywords": ["bot", "chatbot", "messenger", "facebook"],
+  "image": "heroku/nodejs"
+}
