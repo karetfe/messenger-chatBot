@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-
 /*
  * Send a message to a facebook user
  * @param {string} userId - The id of the user -we are sending to- within the scope of the facebook page.
@@ -68,7 +67,7 @@ const handleMessage = function(messaging) {
         }
         return sendApi(userId, message);
       }else {
-        let message = {text: text.toUpperCase()};
+        let message = {text: text};
         return sendApi(userId, message);
       }
     }
