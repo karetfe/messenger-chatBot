@@ -59,7 +59,7 @@ const handleMessage = function(messaging) {
               payload:"FUN"
             },
             {
-              content_type:"text",
+              content_type:"taddext",
               title:"Healthy",
               payload:"HEALTHY"
             }
@@ -67,7 +67,7 @@ const handleMessage = function(messaging) {
         }
         return sendApi(userId, message);
       }else {
-        let message = {text: text};
+        var message = {text: text};
         return sendApi(userId, message);
       }
     }
@@ -105,6 +105,7 @@ app.post('/webhook', function(req, res) {
   entries.forEach(function(entry){
     var messagings = entry.messaging;
     messagings.forEach(function(messaging){
+      console.log(messaging);
       handleMessage(messaging);
     })
   })
